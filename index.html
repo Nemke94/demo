@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<img class="logo" src="slice/porsche-logo.png">
+			<nav>
+				<ul id="nav_list">
+					<li class="nav_list"><a class="nav_list_a" href="#">Početna</a></li>
+					<li class="nav_list"><a class="nav_list_a" href="#">Bid</a></li>
+					<li class="nav_list"><a class="nav_list_a" href="#">Rang Lista</a></li>
+					<li class="nav_list"><a class="nav_list_a" href="#">Pravila</a></li>
+				</ul>
+			</nav>
+		</div> <!-- wrapper ends here -->	
+	</header>
+	<div class="box">
+		<button class="share">Podijeli vozilo <span class="fa fa-share-alt" aria-hidden="true"></span></button>
+	</div><!-- box ends here -->
+	<div class="wrapper_one">
+		<div class="headline">
+			<h1>Volkswagen Beetle</h1>
+			<h4>Lorem ipsum dolor sit amet</h4>
+		</div>
+		<div class="price">
+			<span class="price_s">136,380 Kn</span>
+		</div>
+	</div><!-- wrapper_one ends here -->
+	<hr>
+	<div class="wrapper_two">
+		<div class="pictures">
+			<img class="bug" src="slice/slider-1.jpg">
+			<img class="bug" src="slice/slider-2.jpg">
+			<img class="bug" src="slice/slider-3.jpg">
+			<img class="bug" src="slice/slider-4.jpg">
+			<div class="pi_ho_h">
+				<div class="pictures_holder one">
+					<img class="bug_in in"  src="slice/slider-1.jpg" onclick="currentDiv(1)">
+				</div>
+				<div class="pictures_holder two">	
+					<img class="bug_in in" src="slice/slider-2.jpg" onclick="currentDiv(2)">
+				</div>
+				<div class="pictures_holder three">
+					<img class="bug_in in" src="slice/slider-3.jpg" onclick="currentDiv(3)">
+				</div>
+				<div class="pictures_holder four">
+					<img class="bug_in in" src="slice/slider-4.jpg" onclick="currentDiv(4)">
+				</div>
+			</div><!-- pi_ho_h ends -->
+		</div><!-- pictures ends here -->
+		<div class="list_property">
+			<h2 id="vehicle">Opis Vozila</h2>
+			<div class="list_p_holder">
+				<ul class="gray">
+					<li class="gray_li">Make</li>
+					<li class="gray_li">Model</li>
+					<li class="gray_li">Kilometres</li>
+					<li class="gray_li">Body Type</li>
+					<li class="gray_li">Style/trim</li>
+					<li class="gray_li">Engine</li>
+					<li class="gray_li">Drivetrain</li>
+					<li class="gray_li">Transmission</li>
+					<li class="gray_li">Exterior Color</li>
+					<li class="gray_li">Interior</li>
+					<li class="gray_li">Fuel Type</li>
+				</ul>
+				<ul class="black">
+					<li class="black_li">Make</li>
+					<li class="black_li">Model</li>
+					<li class="black_li">Kilometres</li>
+					<li class="black_li">Body Type</li>
+					<li class="black_li">Style/trim</li>
+					<li class="black_li">Engine</li>
+					<li class="black_li">Drivetrain</li>
+					<li class="black_li">Transmission</li>
+					<li class="black_li">Exterior Color</li>
+					<li class="black_li">Interior</li>
+					<li class="black_li">Fuel Type</li>
+				</ul>
+			</div><!-- list_p_holder ends -->
+		</div><!-- list_property ends -->
+	</div><!-- wrapper_two ends here -->
+	<div class="wrapper_three">
+		<div class="car_info">
+			<div class="tabs">
+				<div class="tab">
+					<input type="radio" id="tab-1" name="tab-group-1" checked>
+					<label for="tab-1">Informacije o vozilu</label>
+					
+					<div class="content first">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, elit in volutpat ultrices, metus massa sagittis lorem, non vulputate turpis nulla et arcu. Nullam in nisl eros. Praesent luctus justo eget leo fermentum, ac sodales diam rhoncus. Maecenas tempus libero odio, sit amet varius justo aliquam vitae. </p>
+						<p>Pellentesque et massa non orci pellentesque malesuada. Sed molestie nulla id massa cursus ullamcorper. Nunc sagittis non justo in pretium. Suspendisse ultricies arcu eros, vel dignissim urna eleifend porta. Ut est sem, accumsan vel nibh eu, sodales rhoncus velit. Quisque suscipit, sem sagittis vulputate tempor, diam justo feugiat odio, ut luctus quam nibh vel leo. In hac habitasse platea dictumst. Suspendisse potenti. Morbi dictum erat eu nisl finibus, non efficitur libero dignissim. Nullam ac ultrices massa.</p>
+						<p>Mauris maximus dictum tortor, at dapibus sapien feugiat in. Nullam non nunc dictum, ultricies leo quis, semper velit. Donec feugiat consectetur eros id venenatis. Integer velit leo, imperdiet non laoreet at, tincidunt vel eros. Aliquam elementum tincidunt lobortis. Pellentesque et imperdiet massa. Nullam suscipit quam at ipsum ultricies, in placerat diam rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus arcu tortor, luctus at interdum et, placerat vel augue. Nullam a eleifend dui. Praesent rhoncus a est venenatis rutrum.</p>
+					</div><!-- content ends -->
+				</div><!-- tab ends here -->
+
+				<div class="tab">
+					<input type="radio" id="tab-2" name="tab-group-1">
+					<label id="label" for="tab-2">Najnoviji bidovi</label>
+					<div class="content second">
+						<div class="bid_list">
+							<div class="numero highest-one">
+								<p class="numero-num">1</p>
+							</div>
+							<div class="john-doe highest">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,380</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">2</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">3</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">4</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">5</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">6</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">7</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">8</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">9</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">10</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">11</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">12</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">13</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+						<div class="bid_list">
+							<div class="numero">
+								<p class="numero-num">14</p>
+							</div>
+							<div class="john-doe">
+								<p class="john-doe-one">John Doe</p>
+								<p class="john-doe-num">186,370</p>
+							</div>
+						</div>
+
+					</div><!-- content ends -->
+				</div><!-- tab ends here -->
+			</div><!-- tabs ends -->
+		</div><!-- car_info ends -->
+		<div class="bid_holder">
+			<div class="time">
+				<span class="fa fa-clock-o" aria-hidden="true"></span>
+				<div class="countdown-main">
+					<p class="leftover">Preostalo vrijeme</p>
+					<p id="countdown"></p>
+				</div>
+			</div>
+			<div class="place_bid">
+				<img class="money_bid_image" src="slice/funds.png">
+				<p class="bid_placer">Postavi bid</p>
+			</div>
+			<div class="money">
+				<div class="some-paraf">
+					<p>LOREM IPSUM DOLOR SIT AMET CONSEC</p>
+					<p>&#8727;Lorem ipsum dolor sit amet</p>
+				</div>
+				<div class="prices">
+					<div class="buttons">
+						<button class="button-plus" type="button" onClick="clickME()">+</button>
+    					<button class="button-minus" type="button" onClick="clickMEd()">-</button>
+    				</div>
+    				<div class="how-much">
+						<span id="clicks" class="price_s down">186,380 Kn</span>
+					</div>
+				</div>
+				<p class="loremm">&#8727;Lorem ipsum dolor sit amet</p>
+				<div class="submit-button">
+					<button class="place-your-bid" type="submit">POSTAVI BID <span class="fa fa-chevron-right" aria-hidden="true"></span></button>
+				</div>
+			</div><!-- money ends -->
+		</div><!-- bid_holder ends here -->
+	</div><!-- wrapper_three ends here -->
+	<script type="text/javascript" src="prime.js"></script>
+</body>
+</html>
